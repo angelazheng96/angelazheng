@@ -1,5 +1,9 @@
 ---
+import { Icon } from "astro-icon/components";
+
 const { platform, link } = Astro.props;
 ---
 
-<a href={`${link}`} target="_blank">{platform}</a>
+<a href={`${link}`} target="_blank">
+  <Icon name=`${platform.toLowerCase()}` />
+</a>
