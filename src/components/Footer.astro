@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import Social from "./Social.astro";
+import signature from "../images/signature.png";
 ---
 
 <footer>
@@ -9,4 +11,9 @@ import Social from "./Social.astro";
     link="https://www.linkedin.com/in/angelazheng96/"
   />
   <Social platform="GitHub" link="https://github.com/angelazheng96" />
+  <Image
+    src={signature}
+    alt="Handwritten text displaying 'Made with love by Angela Zheng'"
+    width={300}
+  />
 </footer>
