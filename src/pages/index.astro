@@ -1,7 +1,10 @@
 ---
 import "../styles/global.css";
+import { Image } from "astro:assets";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+
+import profilePic from "../images/profile-picture.jpg";
 ---
 
 <html lang="en">
@@ -15,6 +18,11 @@ import Footer from "../components/Footer.astro";
   <body>
     <Navigation />
     <h1>Angela Zheng</h1>
+    <Image
+      src={profilePic}
+      alt="Image of Angela in front of a pink and blue sunset"
+      width={100}
+    />
     <div>
       <p>
         Hi—welcome to my personal website! I'm Angela Zheng, an incoming
