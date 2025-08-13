@@ -1,12 +1,17 @@
 ---
 import "../styles/global.css";
 import NavLink from "./NavLink.astro";
+import SocialLinks from "./SocialLinks.astro";
 ---
 
 <nav class="bg-linear-117 from-teal via-lilac to-salmon px-4 py-2">
-  <div class="flex gap-10">
-    <NavLink title="Home" link="/" />
-    <NavLink title="Gallery" link="/gallery/" />
-    <NavLink title="Contact" link="/contact/" />
+  <div>
+    <div class="flex gap-10">
+      <NavLink title="Home" link="/" />
+      <NavLink title="Projects" link="/projects/" />
+      <NavLink title="Gallery" link="/gallery/" />
+      <NavLink title="Contact" link="/contact/" />
+    </div>
+    <SocialLinks />
   </div>
 </nav>

@@ -1,18 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import Social from "./Social.astro";
+import SocialLinks from "./SocialLinks.astro";
 import signature from "../images/signature.png";
 ---
 
 <footer class="bg-linear-117 from-teal via-lilac to-salmon pt-8">
-  <div class="flex gap-2 justify-center">
-    <Social platform="Email" link="mailto:angelazheng96@gmail.com" />
-    <Social
-      platform="LinkedIn"
-      link="https://www.linkedin.com/in/angelazheng96/"
-    />
-    <Social platform="GitHub" link="https://github.com/angelazheng96" />
-  </div>
+  <SocialLinks />
   <div class="flex justify-center">
     <Image
       src={signature}
