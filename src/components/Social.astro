@@ -1,9 +1,14 @@
 ---
+import "../styles/global.css";
 import { Icon } from "astro-icon/components";
 
 const { platform, link } = Astro.props;
 ---
 
 <a href={`${link}`} target="_blank" aria-label={platform}>
-  <Icon name=`${platform.toLowerCase()}` />
+  <Icon
+    name=`${platform.toLowerCase()}`
+    title={platform}
+    class="fill-lilac hover:fill-white h-6 w-6"
+  />
 </a>

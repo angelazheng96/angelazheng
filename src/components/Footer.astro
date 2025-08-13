@@ -4,17 +4,22 @@ import Social from "./Social.astro";
 import signature from "../images/signature.png";
 ---
 
-<footer>
-  <Social platform="Email" link="mailto:angelazheng96@gmail.com" />
-  <Social
-    platform="LinkedIn"
-    link="https://www.linkedin.com/in/angelazheng96/"
-  />
-  <Social platform="GitHub" link="https://github.com/angelazheng96" />
-  <Image
-    src={signature}
-    alt="Handwritten text displaying 'Made with love by Angela Zheng'"
-    width={300}
-    loading="eager"
-  />
+<footer class="bg-linear-117 from-teal via-lilac to-salmon pt-8">
+  <div class="flex gap-2 justify-center">
+    <Social platform="Email" link="mailto:angelazheng96@gmail.com" />
+    <Social
+      platform="LinkedIn"
+      link="https://www.linkedin.com/in/angelazheng96/"
+    />
+    <Social platform="GitHub" link="https://github.com/angelazheng96" />
+  </div>
+  <div class="flex justify-center">
+    <Image
+      src={signature}
+      alt="Handwritten text displaying 'Made with love by Angela Zheng'"
+      width={300}
+      loading="eager"
+      class="pb-2"
+    />
+  </div>
 </footer>
