@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -5,4 +6,6 @@
   --color-lilac: #C4A5D3;
   --color-eggplant: #743990;
   --color-salmon: #DFB6B2;
+
+  --font-display: "Inter", "Nunito Sans", serif;
 }
