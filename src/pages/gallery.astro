@@ -2,10 +2,13 @@
 import "../styles/global.css";
 
 import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
 ---
 
 <Layout title="Gallery">
-  <h1>Gallery</h1>
+  <Banner>
+    <h1 class="flex justify-center text-5xl font-medium">Gallery</h1>
+  </Banner>
   <div>
     Yay, you've found my Gallery! I often forget to include photography in any
     list of my hobbies, but I'm a very amateur photographer (as in, I use my
