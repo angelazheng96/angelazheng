@@ -4,8 +4,8 @@
 @theme {
   --color-teal: #A3D2CA;
   --color-lilac: #C4A5D3;
-  --color-eggplant: #743990;
+  --color-eggplant: #5a2c70;
   --color-salmon: #DFB6B2;
 
-  --font-display: "Inter", "Nunito Sans", serif;
+  --font-display: "Inter", "Nunito Sans", sans-serif;
 }
