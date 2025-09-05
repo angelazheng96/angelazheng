@@ -1,28 +1,34 @@
 ---
 import "../styles/global.css";
 
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 
 const { frontmatter } = Astro.props;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Angela Zheng | {frontmatter.title}</title>
-  </head>
-  <body class="font-display">
-    <Navigation />
-    <div class="mx-50 my-10">
+<Layout title={frontmatter.title}>
+  <div class="mx-50 my-10">
+    <div class="text-lg grid gap-4 justify-center justify-items-center">
+      <div>
+        {
+          new Date(
+            frontmatter.date.toString().slice(0, 4),
+            frontmatter.date.toString().slice(5, 7) - 1,
+            frontmatter.date.toString().slice(8, 10),
+          ).toDateString()
+        }
+      </div>
+      <div>
+        {frontmatter.tags ? frontmatter.tags.join(", ") : ""}
+      </div>
       <h1 class="flex justify-center text-5xl font-medium">
         {frontmatter.title}
       </h1>
-      <slot />
+      <div>
+        {frontmatter.techStack ? frontmatter.techStack.join(", ") : ""}
+      </div>
+      <div class="italic">{frontmatter.description}</div>
     </div>
-    <Footer />
-  </body>
-</html>
+    <slot />
+  </div>
+</Layout>

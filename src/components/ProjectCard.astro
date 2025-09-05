@@ -1,0 +1,10 @@
+---
+import "../styles/global.css";
+
+const { url, title } = Astro.props;
+---
+
+<div>
+  <a href={url}>{title}</a>
+  <slot />
+</div>
