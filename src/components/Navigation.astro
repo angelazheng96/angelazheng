@@ -1,12 +1,18 @@
 ---
 import "../styles/global.css";
+import { Image } from "astro:assets";
 import NavLink from "./NavLink.astro";
 import SocialLinks from "./SocialLinks.astro";
+
+import name from "../images/name.png";
 ---
 
 <nav class="px-5 py-4 bg-linear-90 from-teal via-lilac to-salmon">
-  <div class="flex text-lg">
-    <div class="font-bold mr-12 text-eggplant">Angela Zheng</div>
+  <div class="flex text-lg items-center">
+    <div class="mr-12">
+      <Image src={name} alt="Angela Zheng" width={150} loading="eager" />
+    </div>
+    <!-- <div class="font-bold mr-12 text-eggplant">Angela Zheng</div> -->
     <div class="flex gap-8">
       <NavLink title="Home" link="/" />
       <NavLink title="Projects" link="/projects/" />
