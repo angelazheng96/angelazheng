@@ -1,10 +1,12 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
-title: "Tim Hortoons"
+title: Tim Hortoons
 date: 2025-07-06
-description: "This is the first post of my new Astro blog."
-tags: ["Hackathon"]
+description: A cute animal barista game.
+tags: ["Hackathon", "Hack Club", "JPEG Ottawa"]
 techStack: ["Unity", "C#"]
+repo: https://github.com/chairzihan/Tim-Hortoons
+demo: https://chairzihan.itch.io/tim-hortoons
 ---
 
-This is testing
+We made this in 25 hours!!
