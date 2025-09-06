@@ -21,7 +21,11 @@ const { frontmatter } = Astro.props;
             frontmatter.date.toString().slice(0, 4),
             frontmatter.date.toString().slice(5, 7) - 1,
             frontmatter.date.toString().slice(8, 10),
-          ).toDateString()
+          ).toLocaleDateString("en-CA", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })
         }
       </div>
       <div>
