@@ -16,11 +16,11 @@ const allPosts = Object.values(
       Projects
     </h1>
   </Banner>
-  <ul>
+  <div class="grid justify-center">
     {
       allPosts.map((post: any) => (
         <ProjectCard url={post.url} title={post.frontmatter.title} />
       ))
     }
-  </ul>
+  </div>
 </Layout>
