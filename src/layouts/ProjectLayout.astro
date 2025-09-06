@@ -8,6 +8,12 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title}>
   <div class="mx-50 my-10">
+    <button
+      onclick="location.href='/projects'"
+      class="mb-5 p-2 border-2 border-lilac rounded-lg hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant transition-transform duration-200"
+    >
+      &larr; Back to Projects
+    </button>
     <div class="text-lg grid gap-4 justify-center justify-items-center">
       <div>
         {
