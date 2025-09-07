@@ -17,11 +17,7 @@ const { frontmatter } = Astro.props;
     <div class="text-lg grid gap-4 justify-center justify-items-center">
       <div>
         {
-          new Date(
-            frontmatter.date.toString().slice(0, 4),
-            frontmatter.date.toString().slice(5, 7) - 1,
-            frontmatter.date.toString().slice(8, 10),
-          ).toLocaleDateString("en-CA", {
+          new Date(frontmatter.date).toLocaleDateString("en-CA", {
             year: "numeric",
             month: "long",
             day: "numeric",

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/ProjectLayout.astro
 title: Tim Hortoons
-date: 2025-07-06
+date: 2025-07-06T00:00:00.000-05:00
 description: A cute animal barista game.
 tags: ["Hackathon", "Hack Club", "JPEG Ottawa", "Athena Award"]
 techStack: ["Unity", "C#"]
