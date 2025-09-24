@@ -2,10 +2,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-teal: #A3D2CA;
+  --color-aquamarine: #A3D2CA;
+  --color-teal: #50828f;
   --color-lilac: #C4A5D3;
   --color-eggplant: #5a2c70;
+  --color-rose: #917471;
   --color-salmon: #DFB6B2;
 
   --font-display: "Inter", "Nunito Sans", sans-serif;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
