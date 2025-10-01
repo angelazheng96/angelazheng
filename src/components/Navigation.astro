@@ -4,7 +4,8 @@ import { Image } from "astro:assets";
 import NavLink from "./NavLink.astro";
 import SocialLinks from "./SocialLinks.astro";
 
-import name from "../images/name.png";
+import nameDark from "../images/name-dark.png";
+import nameLight from "../images/name-light.png";
 ---
 
 <nav
@@ -12,7 +13,20 @@ import name from "../images/name.png";
 >
   <div class="flex text-lg items-center">
     <div class="mr-12">
-      <Image src={name} alt="Angela Zheng" width={150} loading="eager" />
+      <Image
+        src={nameDark}
+        alt="Angela Zheng"
+        width={150}
+        loading="eager"
+        class="block dark:hidden"
+      />
+      <Image
+        src={nameLight}
+        alt="Angela Zheng"
+        width={150}
+        loading="eager"
+        class="hidden dark:block"
+      />
     </div>
     <div class="flex gap-8">
       <NavLink title="Home" link="/" />
