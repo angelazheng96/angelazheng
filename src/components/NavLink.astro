@@ -4,4 +4,8 @@ import "../styles/global.css";
 const { title, link } = Astro.props;
 ---
 
-<a href={link} class="text-black hover:text-eggplant">{title}</a>
+<a
+    href={link}
+    class="text-black hover:text-eggplant text-dark dark:hover:text-lilac dark:text-light"
+    >{title}</a
+>

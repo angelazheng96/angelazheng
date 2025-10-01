@@ -1,18 +1,29 @@
 ---
 import { Image } from "astro:assets";
 import SocialLinks from "./SocialLinks.astro";
-import signature from "../images/signature.png";
+
+import signatureDark from "../images/signature-dark.png";
+import signatureLight from "../images/signature-light.png";
 ---
 
-<footer class="bg-linear-90 from-teal via-lilac to-salmon pt-8 pb-6">
+<footer
+  class="bg-linear-90 from-aquamarine via-lilac to-salmon pt-8 pb-6 dark:from-teal dark:via-eggplant dark:to-rose"
+>
   <SocialLinks />
   <div class="flex justify-center">
     <Image
-      src={signature}
+      src={signatureDark}
       alt="Handwritten text displaying 'Made with love by Angela Zheng'"
       width={200}
       loading="eager"
-      class="mt-4"
+      class="mt-9 block dark:hidden"
+    />
+    <Image
+      src={signatureLight}
+      alt="Handwritten text displaying 'Made with love by Angela Zheng'"
+      width={200}
+      loading="eager"
+      class="mt-8 hidden dark:block"
     />
   </div>
 </footer>
