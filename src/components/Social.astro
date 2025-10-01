@@ -5,10 +5,12 @@ import { Icon } from "astro-icon/components";
 const { platform, link } = Astro.props;
 ---
 
-<a href={link} target="_blank" aria-label={platform}>
-  <Icon
-    name=`${platform.toLowerCase()}`
-    title={platform}
-    class="fill-lilac hover:fill-white h-6 w-6"
-  />
-</a>
+<div>
+  <a href={link} target="_blank" aria-label={platform}>
+    <Icon
+      name={platform.toLowerCase()}
+      title={platform}
+      class="h-6 w-6 text-dark hover:text-eggplant dark:text-light dark:hover:text-lilac"
+    />
+  </a>
+</div>
