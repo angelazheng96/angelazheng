@@ -3,6 +3,10 @@ import "../styles/global.css";
 
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
+
+import GalleryImage from "../components/GalleryImage.astro";
+
+import img_0878 from "../images/gallery/IMG_0878.jpg";
 ---
 
 <Layout title="Gallery">
@@ -13,6 +17,10 @@ import Banner from "../components/Banner.astro";
       Gallery
     </h1>
   </Banner>
+  <!-- Credit: https://medium.com/@ankurr.singhal/creating-responsive-masonry-ui-like-pinterest-with-tailwindcss-9df207c621f4 -->
+  <div class="sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 p-4">
+    <GalleryImage filePath={img_0878} altText="helo" />
+  </div>
   <div class="mx-auto my-10 w-[80ch] grid grid-cols-1 gap-4">
     <div>
       Yay, you've found my Gallery! I often forget to include photography in any

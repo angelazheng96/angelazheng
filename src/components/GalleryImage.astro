@@ -1,0 +1,10 @@
+---
+import "../styles/global.css";
+import { Image } from "astro:assets";
+
+const { filePath, altText } = Astro.props;
+---
+
+<div>
+    <Image src={filePath} alt={altText} loading="eager" class="rounded-lg" />
+</div>
