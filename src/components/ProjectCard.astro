@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
 
-const { url, title } = Astro.props;
+const { url, frontmatter } = Astro.props;
 ---
 
 <button
   onclick={`window.location.href='${url}'`}
-  class="m-4 p-4 border-2 border-lilac rounded-lg hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant transition-transform duration-200"
+  class="m-4 p-4 w-md border-2 border-lilac rounded-lg hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant transition-transform duration-200"
 >
-  {title}
+  <div class="font-semibold">{frontmatter.title}</div>
+  <div class="">{frontmatter.description}</div>
 </button>

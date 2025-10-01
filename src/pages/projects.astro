@@ -18,10 +18,12 @@ const allPosts = Object.values(
       Projects
     </h1>
   </Banner>
-  <div class="grid justify-center">
+  <div
+    class="grid grid-cols-2 justify-center justify-items-center items-stretch"
+  >
     {
       allPosts.map((post: any) => (
-        <ProjectCard url={post.url} title={post.frontmatter.title} />
+        <ProjectCard url={post.url} frontmatter={post.frontmatter} />
       ))
     }
   </div>
