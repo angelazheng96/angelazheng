@@ -35,6 +35,8 @@ const { frontmatter } = Astro.props;
       </div>
       <div class="italic">{frontmatter.description}</div>
     </div>
-    <slot />
+    <div class="prose dark:prose-invert prose-h1-font-bold">
+      <slot />
+    </div>
   </div>
 </Layout>
