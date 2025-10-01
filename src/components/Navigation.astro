@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { Image } from "astro:assets";
 import NavLink from "./NavLink.astro";
+import DarkModeSwitch from "./DarkModeSwitch.astro";
 import SocialLinks from "./SocialLinks.astro";
 
 import nameDark from "../images/name-dark.png";
@@ -34,7 +35,10 @@ import nameLight from "../images/name-light.png";
       <NavLink title="Gallery" link="/gallery/" />
       <NavLink title="Contact" link="/contact/" />
     </div>
-    <div class="ml-auto">
+    <div class="ml-auto mr-6 flex items-center">
+      <DarkModeSwitch />
+    </div>
+    <div>
       <SocialLinks />
     </div>
   </div>
