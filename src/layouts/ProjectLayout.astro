@@ -7,35 +7,45 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <div class="mx-50 my-10">
-    <button
-      onclick="location.href='/projects'"
-      class="mb-5 p-2 border-2 border-lilac rounded-lg hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant transition-transform duration-200"
-    >
-      &larr; Back to Projects
-    </button>
-    <div class="text-lg grid gap-4 justify-center justify-items-center">
-      <div>
-        {
-          new Date(frontmatter.date).toLocaleDateString("en-CA", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })
-        }
+  <div class="my-10 flex flex-col gap-10">
+    <div class="mx-50">
+      <button
+        onclick="location.href='/projects'"
+        class="mb-5 p-2 border-2 border-lilac rounded-lg
+        hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant
+        transition-transform duration-200"
+      >
+        &larr; Back to Projects
+      </button>
+      <div class="text-lg grid gap-4 justify-center justify-items-center">
+        <div>
+          {
+            new Date(frontmatter.date).toLocaleDateString("en-CA", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })
+          }
+        </div>
+        <div>
+          {frontmatter.tags ? frontmatter.tags.join(", ") : ""}
+        </div>
+        <h1 class="flex justify-center text-5xl font-semibold">
+          {frontmatter.title}
+        </h1>
+        <div>
+          {frontmatter.techStack ? frontmatter.techStack.join(", ") : ""}
+        </div>
+        <div class="italic w-[80ch]">{frontmatter.description}</div>
       </div>
-      <div>
-        {frontmatter.tags ? frontmatter.tags.join(", ") : ""}
-      </div>
-      <h1 class="flex justify-center text-5xl font-medium">
-        {frontmatter.title}
-      </h1>
-      <div>
-        {frontmatter.techStack ? frontmatter.techStack.join(", ") : ""}
-      </div>
-      <div class="italic">{frontmatter.description}</div>
     </div>
-    <div class="prose dark:prose-invert prose-h1-font-bold">
+    <div
+      class="mx-auto
+      prose dark:prose-invert
+      prose-p:w-[80ch]
+      prose-h1:text-3xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
+      prose-h2:text-xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine"
+    >
       <slot />
     </div>
   </div>
