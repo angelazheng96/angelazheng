@@ -2,9 +2,9 @@
 import "../styles/global.css";
 import { Image } from "astro:assets";
 
-const { filePath, altText } = Astro.props;
+const { filePath } = Astro.props;
 ---
 
 <div>
-    <Image src={filePath} alt={altText} loading="eager" class="rounded-lg" />
+    <Image src={filePath} alt={"test"} loading="eager" class="rounded-lg" />
 </div>
