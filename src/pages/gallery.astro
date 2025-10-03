@@ -14,6 +14,12 @@ const images = await Promise.all(
   Object.values(imageModules).map((mod) => mod()),
 );
 const imageFiles = images.map((mod) => mod.default);
+
+// Shuffle the array of images
+for (let i = imageFiles.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [imageFiles[i], imageFiles[j]] = [imageFiles[j], imageFiles[i]];
+}
 ---
 
 <Layout title="Gallery">
@@ -24,33 +30,34 @@ const imageFiles = images.map((mod) => mod.default);
       Gallery
     </h1>
   </Banner>
+  <div class="mx-auto mt-8 mb-4 w-[80ch] text-center text-lg">
+    I like taking pictures of sunsets! (...and other things too)
+  </div>
   <!-- Credit: https://medium.com/@ankurr.singhal/creating-responsive-masonry-ui-like-pinterest-with-tailwindcss-9df207c621f4 -->
-  <div class="sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 p-4">
+  <div class="sm:columns-2 md:columns-3 lg:columns-4 gap-2 space-y-2 p-4">
     {imageFiles.map((image) => <GalleryImage filePath={image} />)}
   </div>
   <div class="mx-auto my-10 w-[80ch] grid grid-cols-1 gap-4">
     <div>
-      Yay, you've found my Gallery! I often forget to include photography in any
-      list of my hobbies, but I'm a very amateur photographer (as in, I use my
-      phone camera exclusively). Here are some of my favourite photos that I've
-      taken, mostly from various trips that I've gone on!
-    </div>
-    <div>
-      To end off, here's a quotation written by Ann Liang that I really like:
-      <blockquote>
-        <p>
-          And my heart swells at the silly, simple, human fact that when we
-          stumble upon something beautiful, our first instinct is to show it to
-          the people we love. It's what we do with pretty seashells on a beach,
-          a radiant sunset, a rare bird flitting through the trees, a herd of
-          wild horses grazing in the countryside. <i>Look</i>, we say, saving
-          these little pieces of beauty for each other. <i>
-            Do you see it too? Isn't the world such a strange, lovely,
-            breathtaking place?</i
-          >
-        </p>
-        <cite>— Ann Liang, Never Thought I'd End Up Here, pg. 284</cite>
-      </blockquote>
+      You made it to the end! Here's a quote I really like:
+      <div
+        class="p-4 rounded-lg mt-2 bg-linear-90 from-salmon/25 via-lilac/25 to-aquamarine/25 dark:from-rose/25 dark:via-eggplant/25 dark:to-teal/25"
+      >
+        <blockquote>
+          <p>
+            And my heart swells at the silly, simple, human fact that when we
+            stumble upon something beautiful, our first instinct is to show it
+            to the people we love. It's what we do with pretty seashells on a
+            beach, a radiant sunset, a rare bird flitting through the trees, a
+            herd of wild horses grazing in the countryside. <i>Look</i>, we say,
+            saving these little pieces of beauty for each other. <i>
+              Do you see it too? Isn't the world such a strange, lovely,
+              breathtaking place?</i
+            >
+          </p>
+          <cite>— Ann Liang, Never Thought I'd End Up Here, pg. 284</cite>
+        </blockquote>
+      </div>
     </div>
   </div>
 </Layout>
