@@ -9,21 +9,32 @@ import signatureLight from "../images/signature-light.png";
 <footer
   class="bg-linear-90 from-aquamarine via-lilac to-salmon pt-8 pb-6 dark:from-teal dark:via-eggplant dark:to-rose"
 >
-  <SocialLinks />
-  <div class="flex justify-center">
-    <Image
-      src={signatureDark}
-      alt="Handwritten text displaying 'Made with love by Angela Zheng'"
-      width={200}
-      loading="eager"
-      class="mt-9 block dark:hidden"
-    />
-    <Image
-      src={signatureLight}
-      alt="Handwritten text displaying 'Made with love by Angela Zheng'"
-      width={200}
-      loading="eager"
-      class="mt-8 hidden dark:block"
-    />
+  <div class="flex flex-col items-center gap-2">
+    <SocialLinks />
+    <div class="mt-4">
+      <Image
+        src={signatureDark}
+        alt="Handwritten text displaying 'Made with love by Angela Zheng'"
+        width={200}
+        loading="eager"
+        class="block dark:hidden"
+      />
+      <Image
+        src={signatureLight}
+        alt="Handwritten text displaying 'Made with love by Angela Zheng'"
+        width={200}
+        loading="eager"
+        class="hidden dark:block"
+      />
+    </div>
+    <div class="text-center text-sm italic">
+      This website is <a
+        href="https://github.com/angelazheng96/angelazheng"
+        target="_blank"
+        class="underline hover:text-eggplant hover:decoration-eggplant dark:hover:text-lilac dark:hover:decoration-lilac"
+      >
+        open source</a
+      >!
+    </div>
   </div>
 </footer>
