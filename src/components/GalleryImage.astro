@@ -2,9 +2,21 @@
 import "../styles/global.css";
 import { Image } from "astro:assets";
 
-const { filePath } = Astro.props;
+const { filePath, description, location, date } = Astro.props;
 ---
 
-<div>
-    <Image src={filePath} alt={"test"} loading="eager" class="rounded-lg" />
+<div class="relative group rounded-lg overflow-hidden">
+    <Image
+        src={filePath}
+        alt={description || "Gallery photo"}
+        loading="eager"
+        class="rounded-lg block w-full"
+    />
+    <div
+        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4 text-center"
+    >
+        {description && <div class="mb-2 text-base">{description}</div>}
+        {location && <div class="mb-1 text-sm italic">{location}</div>}
+        {date && <div class="text-xs">{date}</div>}
+    </div>
 </div>
