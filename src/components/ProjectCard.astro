@@ -6,9 +6,9 @@ const { url, frontmatter } = Astro.props;
 
 <button
   onclick={`window.location.href='${url}'`}
-  class="m-4 p-4 w-md border-2 border-lilac rounded-lg hover:scale-102 hover:shadow-lg hover:cursor-pointer transition-transform duration-200"
+  class="m-4 p-4 w-md border-2 border-lilac/50 rounded-lg hover:scale-102 hover:shadow-lg hover:cursor-pointer transition-transform duration-200"
 >
-  <div class="font-semibold text-eggplant text-xl my-2">
+  <div class="font-semibold text-eggplant dark:text-lilac text-xl my-2">
     {frontmatter.title}
   </div>
   <div class="my-2">{frontmatter.description}</div>

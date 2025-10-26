@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
     <div class="mx-50">
       <button
         onclick="location.href='/projects'"
-        class="mb-5 p-2 border-2 border-lilac rounded-lg
+        class="mb-5 p-2 border-2 border-lilac/50 rounded-lg
         hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant
         transition-transform duration-200"
       >
@@ -27,16 +27,32 @@ const { frontmatter } = Astro.props;
             })
           }
         </div>
-        <div>
-          {frontmatter.tags ? frontmatter.tags.join(", ") : ""}
+        <div class="flex flex-wrap gap-2">
+          {
+            frontmatter.tags &&
+              frontmatter.tags.map((tag) => (
+                <span class="bg-eggplant/50 text-white rounded-md px-3 py-1 text-sm">
+                  {tag}
+                </span>
+              ))
+          }
         </div>
-        <h1 class="flex justify-center text-5xl font-semibold">
+        <h1 class="flex justify-center text-5xl font-semibold my-3">
           {frontmatter.title}
         </h1>
-        <div>
-          {frontmatter.techStack ? frontmatter.techStack.join(", ") : ""}
+        <div class="flex flex-wrap gap-2">
+          {
+            frontmatter.techStack &&
+              frontmatter.techStack.map((tech) => (
+                <span class="bg-teal/50 text-white rounded-md px-3 py-1 text-sm">
+                  {tech}
+                </span>
+              ))
+          }
         </div>
-        <div class="italic w-[80ch]">{frontmatter.description}</div>
+        <div class="italic text-center max-w-[80ch] mx-auto">
+          {frontmatter.description}
+        </div>
       </div>
     </div>
     <div
