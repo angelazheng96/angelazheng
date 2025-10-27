@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-
 import Layout from "../layouts/Layout.astro";
 import ProjectLinks from "../components/ProjectLinks.astro";
 
@@ -8,27 +7,26 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <div class="my-10 flex flex-col gap-10">
+  <div class="my-6 md:my-10 flex flex-col gap-6 md:gap-10">
     <!-- outer container (page-wide centering) -->
     <div class="max-w-5xl mx-auto px-4 w-full">
-      <!-- align back button to the left edge of the prose by placing it in
-           the same-width inner container as the prose (max-w-4xl) -->
+      <!-- back button container -->
       <div class="max-w-4xl mx-auto w-full">
         <button
           onclick="location.href='/projects'"
-          class="mb-5 p-2 border-2 border-lilac/50 rounded-lg
+          class="mb-4 md:mb-5 p-2 border-2 border-lilac/50 rounded-lg
           hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant dark:hover:text-lilac
-          transition-transform duration-200"
+          transition-transform duration-200 text-sm md:text-base"
         >
           &larr; Back to Projects
         </button>
       </div>
 
-      <!-- metadata / title block: center content inside the same inner width -->
+      <!-- metadata / title block -->
       <div
-        class="max-w-4xl mx-auto text-lg grid gap-4 justify-center justify-items-center"
+        class="max-w-4xl mx-auto text-base md:text-lg grid gap-3 md:gap-4 justify-center justify-items-center"
       >
-        <div>
+        <div class="text-sm md:text-base">
           {
             new Date(frontmatter.date).toLocaleDateString("en-CA", {
               year: "numeric",
@@ -38,47 +36,52 @@ const { frontmatter } = Astro.props;
           }
         </div>
 
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-1.5 md:gap-2 justify-center">
           {
             frontmatter.tags &&
               frontmatter.tags.map((tag) => (
-                <span class="bg-eggplant/50 text-white rounded-md px-3 py-1 text-sm">
+                <span class="bg-eggplant/50 text-white rounded-md px-2 md:px-3 py-0.5 md:py-1 text-xs md:text-sm">
                   {tag}
                 </span>
               ))
           }
         </div>
 
-        <h1 class="text-center text-5xl font-semibold my-3">
+        <h1
+          class="text-center text-3xl md:text-5xl font-semibold my-2 md:my-3 px-4"
+        >
           {frontmatter.title}
         </h1>
 
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-1.5 md:gap-2 justify-center">
           {
             frontmatter.techStack &&
               frontmatter.techStack.map((tech) => (
-                <span class="bg-teal/50 text-white rounded-md px-3 py-1 text-sm">
+                <span class="bg-teal/50 text-white rounded-md px-2 md:px-3 py-0.5 md:py-1 text-xs md:text-sm">
                   {tech}
                 </span>
               ))
           }
         </div>
 
-        <div class="italic text-center max-w-[80ch] mx-auto">
+        <div
+          class="italic text-center text-sm md:text-base max-w-[80ch] mx-auto px-4"
+        >
           {frontmatter.description}
         </div>
 
-        <div>
+        <div class="mt-2 md:mt-4">
           <ProjectLinks deploy={frontmatter.demo} repo={frontmatter.repo} />
         </div>
       </div>
     </div>
 
-    <!-- prose: keep same inner max width so its left edge lines up with button -->
+    <!-- prose content -->
     <div
-      class="mx-auto max-w-4xl prose dark:prose-invert
-      prose-h1:text-3xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
-      prose-h2:text-xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine"
+      class="mx-auto max-w-4xl px-4 prose dark:prose-invert
+      prose-p:text-sm md:prose-p:text-base
+      prose-h1:text-2xl md:prose-h1:text-3xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
+      prose-h2:text-xl md:prose-h2:text-2xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine"
     >
       <slot />
     </div>

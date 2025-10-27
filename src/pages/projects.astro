@@ -13,14 +13,14 @@ const allPosts = Object.values(
 <Layout title="Projects">
   <Banner>
     <h1
-      class="flex justify-center text-5xl font-medium text-eggplant dark:text-lilac"
+      class="text-4xl md:text-5xl font-medium text-center text-eggplant dark:text-lilac"
     >
       Projects
     </h1>
   </Banner>
 
   <div
-    class="mx-auto my-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-1 gap-y-1 justify-items-center items-stretch max-w-5xl"
+    class="mx-auto my-4 px-4 py-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center items-stretch max-w-5xl"
   >
     {
       allPosts.map((post: any) => (
