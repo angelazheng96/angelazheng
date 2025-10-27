@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
 
 import GalleryImage from "../components/GalleryImage.astro";
+import galleryData from "../data/gallery.json";
 
 const imageModules = import.meta.glob(
   "/src/images/gallery/*.{JPG,jpg,jpeg,png,gif,webp}",
@@ -15,10 +16,23 @@ const images = await Promise.all(
 );
 const imageFiles = images.map((mod) => mod.default);
 
-// Shuffle the array of images
-for (let i = imageFiles.length - 1; i > 0; i--) {
+// Map metadata to actual image src (handles Astro image module objects)
+const gallery = galleryData
+  .map((meta) => {
+    const fileObj = imageFiles.find((img) => {
+      if (!img) return false;
+      if (typeof img === "string") return img.includes(meta.filename);
+      return typeof img?.src === "string" && img.src.includes(meta.filename);
+    });
+    // keep the module/object (fileObj) instead of using fileObj.src
+    return fileObj ? { ...meta, filePath: fileObj } : null;
+  })
+  .filter(Boolean);
+
+// Shuffle the array of images with metadata
+for (let i = gallery.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
-  [imageFiles[i], imageFiles[j]] = [imageFiles[j], imageFiles[i]];
+  [gallery[i], gallery[j]] = [gallery[j], gallery[i]];
 }
 ---
 
@@ -35,7 +49,16 @@ for (let i = imageFiles.length - 1; i > 0; i--) {
   </div>
   <!-- Credit: https://medium.com/@ankurr.singhal/creating-responsive-masonry-ui-like-pinterest-with-tailwindcss-9df207c621f4 -->
   <div class="sm:columns-2 md:columns-3 lg:columns-4 gap-2 space-y-2 p-4">
-    {imageFiles.map((image) => <GalleryImage filePath={image} />)}
+    {
+      gallery.map((image) => (
+        <GalleryImage
+          filePath={image.filePath}
+          description={image.description}
+          location={image.location}
+          date={image.date}
+        />
+      ))
+    }
   </div>
   <div class="mx-auto my-10 max-w-3xl grid grid-cols-1 gap-4">
     <div class="text-center">
@@ -44,7 +67,7 @@ for (let i = imageFiles.length - 1; i > 0; i--) {
         class="p-4 rounded-lg mt-2 bg-linear-90 from-salmon/25 via-lilac/25 to-aquamarine/25 dark:from-rose/25 dark:via-eggplant/25 dark:to-teal/25"
       >
         <blockquote>
-          <p>
+          <p class="mb-3">
             And my heart swells at the silly, simple, human fact that when we
             stumble upon something beautiful, our first instinct is to show it
             to the people we love. It's what we do with pretty seashells on a
@@ -55,7 +78,12 @@ for (let i = imageFiles.length - 1; i > 0; i--) {
               breathtaking place?</i
             >
           </p>
-          <cite>— Ann Liang, Never Thought I'd End Up Here, pg. 284</cite>
+          <a
+            href="https://www.annliang.com/"
+            target="_blank"
+            class="text-sm hover:text-eggplant dark:hover:text-lilac"
+            >— Ann Liang, Never Thought I'd End Up Here, pg. 284</a
+          >
         </blockquote>
       </div>
     </div>
