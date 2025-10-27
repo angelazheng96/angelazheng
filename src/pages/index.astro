@@ -44,9 +44,11 @@ const homeContent = await import("../pages/home.md");
   </Banner>
 
   <div
-    class="mx-auto my-10 max-w-4xl px-4 md:px-0 prose dark:prose-invert
-    prose-h1:text-xl prose-h1:text-center md:prose-h1:text-left prose-h1:font-medium prose-h1:text-eggplant dark:prose-h1:text-lilac
-    prose-p:text-base
+    class="mx-auto my-10 max-w-4xl px-4 md:px-6 lg:px-8 prose dark:prose-invert
+    prose-h1:text-xl md:prose-h1:text-2xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
+    prose-h1:text-center md:prose-h1:text-left
+    prose-p:text-sm md:prose-p:text-base
+    prose-ul:text-sm prose-ol:text-sm prose-li:text-sm md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base
     prose-a:text-inherit prose-a:no-underline prose-a:[&:hover]:text-eggplant dark:prose-a:[&:hover]:text-lilac"
   >
     <Fragment set:html={homeContent.compiledContent()} />
