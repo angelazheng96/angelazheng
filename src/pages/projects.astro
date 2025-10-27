@@ -8,6 +8,13 @@ import ProjectCard from "../components/ProjectCard.astro";
 const allPosts = Object.values(
   import.meta.glob("./projects/*.md", { eager: true }),
 );
+
+// sort by frontmatter.date (newest first). Handles missing/invalid dates.
+const posts = allPosts.slice().sort((a, b) => {
+  const da = new Date(a.frontmatter?.date || 0).getTime();
+  const db = new Date(b.frontmatter?.date || 0).getTime();
+  return db - da;
+});
 ---
 
 <Layout title="Projects">
@@ -23,7 +30,7 @@ const allPosts = Object.values(
     class="mx-auto my-4 px-4 py-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center items-stretch max-w-5xl"
   >
     {
-      allPosts.map((post: any) => (
+      posts.map((post: any) => (
         <ProjectCard url={post.url} frontmatter={post.frontmatter} />
       ))
     }
