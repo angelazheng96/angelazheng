@@ -3,6 +3,11 @@ import "../styles/global.css";
 
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const allPosts = Object.values(
+  import.meta.glob("./projects/*.md", { eager: true }),
+);
 ---
 
 <Layout title="Projects">
@@ -13,4 +18,14 @@ import Banner from "../components/Banner.astro";
       Projects
     </h1>
   </Banner>
+
+  <div
+    class="mx-auto my-4 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-1 gap-y-1 justify-items-center items-stretch max-w-5xl"
+  >
+    {
+      allPosts.map((post: any) => (
+        <ProjectCard url={post.url} frontmatter={post.frontmatter} />
+      ))
+    }
+  </div>
 </Layout>
