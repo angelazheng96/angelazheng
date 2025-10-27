@@ -9,17 +9,25 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title}>
   <div class="my-10 flex flex-col gap-10">
-    <!-- replaced mx-50 with a centered container to remove the left offset -->
-    <div class="max-w-5xl mx-auto px-4">
-      <button
-        onclick="location.href='/projects'"
-        class="mb-5 p-2 border-2 border-lilac/50 rounded-lg
-        hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant dark:hover:text-lilac
-        transition-transform duration-200"
+    <!-- outer container (page-wide centering) -->
+    <div class="max-w-5xl mx-auto px-4 w-full">
+      <!-- align back button to the left edge of the prose by placing it in
+           the same-width inner container as the prose (max-w-4xl) -->
+      <div class="max-w-4xl mx-auto w-full">
+        <button
+          onclick="location.href='/projects'"
+          class="mb-5 p-2 border-2 border-lilac/50 rounded-lg
+          hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant dark:hover:text-lilac
+          transition-transform duration-200"
+        >
+          &larr; Back to Projects
+        </button>
+      </div>
+
+      <!-- metadata / title block: center content inside the same inner width -->
+      <div
+        class="max-w-4xl mx-auto text-lg grid gap-4 justify-center justify-items-center"
       >
-        &larr; Back to Projects
-      </button>
-      <div class="text-lg grid gap-4 justify-center justify-items-center">
         <div>
           {
             new Date(frontmatter.date).toLocaleDateString("en-CA", {
@@ -29,6 +37,7 @@ const { frontmatter } = Astro.props;
             })
           }
         </div>
+
         <div class="flex flex-wrap gap-2">
           {
             frontmatter.tags &&
@@ -39,9 +48,11 @@ const { frontmatter } = Astro.props;
               ))
           }
         </div>
-        <h1 class="flex text-center text-5xl font-semibold my-3">
+
+        <h1 class="text-center text-5xl font-semibold my-3">
           {frontmatter.title}
         </h1>
+
         <div class="flex flex-wrap gap-2">
           {
             frontmatter.techStack &&
@@ -52,17 +63,20 @@ const { frontmatter } = Astro.props;
               ))
           }
         </div>
+
         <div class="italic text-center max-w-[80ch] mx-auto">
           {frontmatter.description}
         </div>
+
         <div>
           <ProjectLinks deploy={frontmatter.demo} repo={frontmatter.repo} />
         </div>
       </div>
     </div>
 
+    <!-- prose: keep same inner max width so its left edge lines up with button -->
     <div
-      class="mx-auto max-w-[80ch] px-4 prose dark:prose-invert
+      class="mx-auto max-w-4xl prose dark:prose-invert
       prose-h1:text-3xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
       prose-h2:text-xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine"
     >
