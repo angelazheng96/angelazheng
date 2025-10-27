@@ -76,12 +76,15 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
 
-    <!-- prose content -->
+    <!-- prose content (links inherit text, only hovered link turns purple) -->
     <div
       class="mx-auto max-w-4xl px-4 prose dark:prose-invert
       prose-p:text-sm md:prose-p:text-base
       prose-h1:text-2xl md:prose-h1:text-3xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
-      prose-h2:text-xl md:prose-h2:text-2xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine"
+      prose-h1:mt-4 md:prose-h1:mt-6 prose-h1:mb-4
+      prose-h2:text-xl md:prose-h2:text-2xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine
+      prose-h2:mt-4 md:prose-h2:mt-6 prose-h2:mb-4
+      prose-a:text-inherit prose-a:no-underline prose-a:[&:hover]:text-eggplant dark:prose-a:[&:hover]:text-lilac"
     >
       <slot />
     </div>
