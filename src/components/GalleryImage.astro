@@ -12,17 +12,17 @@ const DATE_FORMATTER = new Intl.DateTimeFormat("en-CA", {
 });
 
 const YEAR_FORMATTER = new Intl.DateTimeFormat("en-CA", {
-    year: "numeric"
+    year: "numeric",
 });
 
 function formatDateAsYMD(dateStr) {
     if (!dateStr) return "";
-    
+
     // Check if it's year only (YYYY)
     if (/^\d{4}$/.test(dateStr)) {
         return dateStr; // Return the year as-is
     }
-    
+
     // match bare ISO date YYYY-MM-DD and construct a local Date to avoid TZ shifts
     const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
     let dt;
