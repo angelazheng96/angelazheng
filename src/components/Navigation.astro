@@ -10,36 +10,115 @@ import nameLight from "../images/name-light.png";
 ---
 
 <nav
-  class="sticky top-0 z-50 px-5 py-4 bg-linear-90 from-aquamarine via-lilac to-salmon dark:from-teal dark:via-eggplant dark:to-rose"
+  class="sticky top-0 z-50 px-4 md:px-5 py-3 md:py-4 bg-linear-90 from-aquamarine via-lilac to-salmon dark:from-teal dark:via-eggplant dark:to-rose"
 >
-  <div class="flex text-lg items-center">
-    <div class="mr-12">
-      <Image
-        src={nameDark}
-        alt="Angela Zheng"
-        width={150}
-        loading="eager"
-        class="block dark:hidden"
-      />
-      <Image
-        src={nameLight}
-        alt="Angela Zheng"
-        width={150}
-        loading="eager"
-        class="hidden dark:block"
-      />
+  <div class="flex items-center justify-between md:justify-start">
+    <!-- Logo -->
+    <div class="md:mr-12">
+      <a href="/"
+        ><Image
+          src={nameDark}
+          alt="Angela Zheng"
+          width={120}
+          loading="eager"
+          class="block dark:hidden md:w-[150px]"
+        />
+        <Image
+          src={nameLight}
+          alt="Angela Zheng"
+          width={120}
+          loading="eager"
+          class="hidden dark:block md:w-[150px]"
+        />
+      </a>
     </div>
-    <div class="flex gap-8">
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="menu-toggle"
+      class="md:hidden p-2 text-eggplant dark:text-lilac"
+      aria-label="Toggle menu"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 hover:cursor-pointer"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Links - Desktop -->
+    <div class="hidden md:flex md:gap-8">
       <NavLink title="Home" link="/" />
       <NavLink title="Projects" link="/projects/" />
       <NavLink title="Gallery" link="/gallery/" />
-      <NavLink title="Contact" link="/contact/" />
     </div>
-    <div class="ml-auto mr-6 flex items-center">
+
+    <!-- Theme Switch and Social Links - Desktop -->
+    <div class="hidden md:flex md:ml-auto md:mr-6 md:items-center">
       <ThemeSwitch />
     </div>
-    <div>
+    <div class="hidden md:block">
       <SocialLinks />
     </div>
   </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="mobile-menu overflow-hidden transition-[height] duration-300 ease-in-out"
+    style="height: 0"
+  >
+    <div class="flex flex-col items-center gap-4 py-4">
+      <NavLink title="Home" link="/" />
+      <NavLink title="Projects" link="/projects/" />
+      <NavLink title="Gallery" link="/gallery/" />
+      <div class="flex items-center gap-4 mt-3">
+        <ThemeSwitch />
+        <SocialLinks />
+      </div>
+    </div>
+  </div>
 </nav>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuContent = mobileMenu?.querySelector("div");
+  let isOpen = false;
+
+  if (menuToggle && mobileMenu && menuContent) {
+    // Get content height for animation
+    const menuHeight = menuContent.getBoundingClientRect().height;
+
+    menuToggle.addEventListener("click", () => {
+      isOpen = !isOpen;
+      // Animate height between 0 and content height
+      mobileMenu.style.height = isOpen ? `${menuHeight}px` : "0";
+    });
+  }
+</script>
+
+<style>
+  /* Prevent transition on page load */
+  .mobile-menu {
+    visibility: hidden;
+  }
+  .mobile-menu.initialized {
+    visibility: visible;
+  }
+</style>
+
+<script is:inline>
+  // Initialize after page load to prevent transition flash
+  window.addEventListener("load", () => {
+    document.querySelector(".mobile-menu")?.classList.add("initialized");
+  });
+</script>
