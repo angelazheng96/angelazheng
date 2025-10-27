@@ -1,0 +1,38 @@
+---
+import "../styles/global.css";
+
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+import BlogCard from "../components/BlogCard.astro";
+
+const allPosts = Object.values(
+  import.meta.glob("./blog/*.md", { eager: true }),
+);
+
+// sort by frontmatter.date (newest first). Handles missing/invalid dates.
+const posts = allPosts.slice().sort((a, b) => {
+  const da = new Date(a.frontmatter?.date || 0).getTime();
+  const db = new Date(b.frontmatter?.date || 0).getTime();
+  return db - da;
+});
+---
+
+<Layout title="Blog">
+  <Banner>
+    <h1
+      class="text-4xl md:text-5xl font-medium text-center text-eggplant dark:text-lilac"
+    >
+      Blog
+    </h1>
+  </Banner>
+
+  <div
+    class="mx-auto my-4 px-4 py-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 justify-items-center items-stretch max-w-5xl"
+  >
+    {
+      posts.map((post: any) => (
+        <BlogCard url={post.url} frontmatter={post.frontmatter} />
+      ))
+    }
+  </div>
+</Layout>
