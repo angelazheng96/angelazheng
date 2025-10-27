@@ -48,7 +48,9 @@ const homeContent = await import("../pages/home.md");
     prose-h1:text-xl md:prose-h1:text-2xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
     prose-h1:text-center md:prose-h1:text-left
     prose-p:text-sm md:prose-p:text-base
-    prose-ul:text-sm prose-ol:text-sm prose-li:text-sm md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base
+    prose-ul:text-sm prose-ol:text-sm prose-li:text-sm
+    md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base
+    marker:text-rose dark:marker:text-salmon
     prose-a:text-inherit prose-a:no-underline prose-a:[&:hover]:text-eggplant dark:prose-a:[&:hover]:text-lilac"
   >
     <Fragment set:html={homeContent.compiledContent()} />
