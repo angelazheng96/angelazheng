@@ -8,7 +8,7 @@ import GalleryImage from "../components/GalleryImage.astro";
 import galleryData from "../data/gallery.json";
 
 const imageModules = import.meta.glob(
-  "/src/images/gallery/*.{JPG,jpg,jpeg,png,gif,webp}",
+  "../images/gallery/*.{JPG,jpg,jpeg,png,gif,webp}",
 );
 
 const images = await Promise.all(
