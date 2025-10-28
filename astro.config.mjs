@@ -7,9 +7,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  image: {
-    service: passthroughImageService()
-  },
+  // image: {
+  //   service: passthroughImageService()
+  // },
 
   integrations: [icon()],
 
