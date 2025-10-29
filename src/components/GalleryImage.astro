@@ -29,8 +29,7 @@ function formatDate(dateStr?: string) {
   <div
     class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4 text-center"
   >
-    {description && <div class="mb-2 text-base">{description}</div>}
-    {location && <div class="mb-1 text-sm italic">{location}</div>}
+    {location && <div class="mb-1 text-md italic">{location}</div>}
     {date && <div class="text-xs">{formatDate(date)}</div>}
   </div>
 </div>
