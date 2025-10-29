@@ -4,52 +4,33 @@ import { Image } from "astro:assets";
 
 const { filePath, description, location, date } = Astro.props;
 
-// Intl formatter (store options once)
-const DATE_FORMATTER = new Intl.DateTimeFormat("en-CA", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+const DATE_FMT = new Intl.DateTimeFormat("en-CA", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
 });
 
-const YEAR_FORMATTER = new Intl.DateTimeFormat("en-CA", {
-    year: "numeric",
-});
-
-function formatDateAsYMD(dateStr) {
-    if (!dateStr) return "";
-
-    // Check if it's year only (YYYY)
-    if (/^\d{4}$/.test(dateStr)) {
-        return dateStr; // Return the year as-is
-    }
-
-    // match bare ISO date YYYY-MM-DD and construct a local Date to avoid TZ shifts
-    const iso = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
-    let dt;
-    if (iso) {
-        const y = Number(iso[1]);
-        const m = Number(iso[2]);
-        const d = Number(iso[3]);
-        dt = new Date(y, m - 1, d); // local midnight — prevents day shift
-    } else {
-        dt = new Date(dateStr);
-        if (Number.isNaN(dt.getTime())) return dateStr;
-    }
-    return DATE_FORMATTER.format(dt);
+function formatDate(dateStr?: string) {
+  if (!dateStr) return "";
+  if (/^\d{4}$/.test(dateStr)) return dateStr;
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
+  const d = m ? new Date(+m[1], +m[2] - 1, +m[3]) : new Date(dateStr);
+  return Number.isNaN(d.getTime()) ? dateStr : DATE_FMT.format(d);
 }
 ---
 
-<div class="relative group rounded-lg overflow-hidden">
-    <Image
-        src={filePath}
-        alt={description || "Gallery photo"}
-        loading="eager"
-        class="rounded-lg block w-full"
-    />
-    <div
-        class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4 text-center"
-    >
-        {location && <div class="mb-1 text-md italic">{location}</div>}
-        {date && <div class="text-xs">{formatDateAsYMD(date)}</div>}
-    </div>
+<div class="relative group rounded-lg overflow-hidden break-inside-avoid">
+  <Image
+    src={filePath}
+    alt={description || "Gallery photo"}
+    loading="lazy"
+    class="rounded-lg block w-full h-auto"
+  />
+  <div
+    class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-center items-center text-white p-4 text-center"
+  >
+    {description && <div class="mb-2 text-base">{description}</div>}
+    {location && <div class="mb-1 text-sm italic">{location}</div>}
+    {date && <div class="text-xs">{formatDate(date)}</div>}
+  </div>
 </div>
