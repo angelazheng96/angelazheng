@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
-import ProjectLinks from "../components/ProjectLinks.astro";
+import Prose from "../components/Prose.astro";
 
 const { frontmatter } = Astro.props;
 ---
@@ -15,7 +15,7 @@ const { frontmatter } = Astro.props;
         <button
           onclick="location.href='/blog'"
           class="mb-4 md:mb-5 p-2 border-2 border-lilac/50 rounded-lg
-          hover:scale-102 hover:shadow-lg hover:cursor-pointer hover:text-eggplant dark:hover:text-lilac
+          hover:scale-102 hover:shadow-lg hover:shadow-salmon/20 dark:hover:shadow-rose/20 hover:cursor-pointer hover:text-eggplant dark:hover:text-lilac
           transition-transform duration-200 text-sm md:text-base"
         >
           &larr; Back to Blog
@@ -61,19 +61,8 @@ const { frontmatter } = Astro.props;
       </div>
     </div>
 
-    <!-- prose content (links inherit text, only hovered link turns purple) -->
-    <div
-      class="mx-auto max-w-4xl px-4 prose dark:prose-invert
-      prose-p:text-sm md:prose-p:text-base
-      prose-h1:text-xl md:prose-h1:text-2xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
-      prose-h1:text-center md:prose-h1:text-left
-      prose-h2:text-base md:prose-h2:text-xl prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine
-      prose-h2:mt-4 md:prose-h2:mt-6 prose-h2:mb-4
-      prose-p:text-sm md:prose-p:text-base
-      prose-ul:text-sm prose-ol:text-sm prose-li:text-sm md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base
-      prose-a:text-inherit prose-a:no-underline prose-a:[&:hover]:text-eggplant dark:prose-a:[&:hover]:text-lilac"
-    >
+    <Prose class="mx-auto max-w-4xl px-4">
       <slot />
-    </div>
+    </Prose>
   </div>
 </Layout>
