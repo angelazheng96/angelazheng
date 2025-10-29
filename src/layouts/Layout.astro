@@ -7,17 +7,22 @@ import Footer from "../components/Footer.astro";
 const { title } = Astro.props;
 ---
 
-<html lang="en" class="">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Angela Zheng | {title}</title>
+    <title>{title} | Angela Zheng</title>
   </head>
-  <body class="font-display text-dark bg-light dark:text-light dark:bg-dark">
+  <body
+    class="flex flex-col min-h-screen font-display text-dark bg-light dark:text-light dark:bg-dark"
+  >
     <Navigation />
-    <slot />
+    <main class="flex-grow">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

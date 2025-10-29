@@ -2,10 +2,18 @@
 import "../styles/global.css";
 
 const { title, link } = Astro.props;
+const isActive = Astro.url.pathname === link;
 ---
 
 <a
-    href={link}
-    class="text-black hover:text-eggplant text-dark dark:hover:text-lilac dark:text-light"
-    >{title}</a
+  href={link}
+  class:list={[
+    "text-lg transition-all duration-200 hover:cursor-pointer",
+    "hover:-translate-y-1 hover:text-eggplant dark:hover:text-lilac",
+    isActive
+      ? "text-eggplant dark:text-lilac underline decoration-2 underline-offset-4"
+      : "text-dark dark:text-light",
+  ]}
 >
+  {title}
+</a>
