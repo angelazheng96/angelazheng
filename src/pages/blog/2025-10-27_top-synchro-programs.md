@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/BlogLayout.astro
 title: My Top 5 Synchro Programs
-date: 2025-10-27T00:00:00.000-05:00
+date: 2025-10-29T01:12:00.000-05:00
 description: My favourite synchronized skating programs of all time.
 tags: ["Synchronized Skating", "Figure Skating"]
 ---
@@ -20,104 +20,90 @@ We worked really hard and (somehow) medalled three times at Nationals! Silver in
 
 # Time for the Rankings!
 
-## Disclaimer
-These are just my personal favourite programs! There are so many awesome synchro teams out there—it's very difficult to pick the best ones. This is basically just me fangirling over these *insane* skaters.
+Disclaimer: These are just my personal favourite programs! There are so many awesome synchro teams out there—it's very difficult to pick the best ones. This is basically just me fangirling over these insane teams.
 
 1. ## "Breathe" | Helsinki Rockettes Senior (FIN) 2022-2023 Short Program
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S-MFWkNdzVY?si=NV5MrrXwDklh_XBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Such a cool opening, I LOVE the intersecting artistic wheel, the dresses are so intricately designed
+From their [theme reveal](https://www.instagram.com/p/CikezCpgUoU/?hl=en) on Instagram:
+> Inhale, Exhale… Take a deep breath. Breath in, breath out. As heart beat accelerates, breathing gets heavy and loud. 🫀 Panic, stress, shortness of breath feels like pain in your body. Breath in, breath out, everything will be allright! The breath was not the last one. ⛅️ Just keep breathing… 🌬
 
-In the music, they did a team recording session of their own breathing and added those recordings to the music!
+Their intricately designed dresses perfectly complement the "Breathe" theme. They actually did a team breathing session and added recordings of their own breathing to their music!
 
-All the choreography is super flowing and symmetrical, their no hold switch of spots with pivots in the lines are unmatched
+They start with such a cool opening that reminds me of a snowflake coming to life, with flowing and symmetrical choreography throughout. 
 
-The music perfectly builds especially the heavy breathing during the twizzles and whip, until all the tension is released in the artistic wheel
+Their no hold element has a spot switch (officially "Change of Place") that I've never seen before, where the four lines pivot and slightly intersect with one another as the skaters glide into their new spots.
 
-To this day I still odn't understand the collapsing square in the middle of the artistic wheel even htough I've watched it in slow motion 2943728729375 times.
+The music perfectly builds up throughout the program, climaxing with heavy breathing during the twizzle element and whip intersection, before all the tension is finally released in the artistic wheel.
 
-I LOVE THIS PROGRAM
+I am SUCH A HUGE FAN of that artistic wheel—it perfectly concludes the program with so many tiny details that you continue to pick up on. To this day, I still don't understand how they had a collapsing square / rotating intersection in the middle of the still-rotating artistic wheel, even though I've watched it in slow motion 3141592654 times.
 
+I love this program so much—it'll truly take a lot to top it in my rankings.
 
-2. ## "Madame Butterfly" | Les Suprêmes Senior (CAN) 2022-2023 Free Program
+2. ## "The Revenge of Madame Butterfly" | Les Suprêmes Senior (CAN) 2022-2023 Free Program
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RSa8VWy4J1M?si=IkPx4qnEPDj12drd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-An amazing program. So jealous of my friends who went to Lake Placid to watch this in-person also love the dresses
+From their [theme reveal](https://www.instagram.com/p/Cl1bTdPjV_t/?hl=en) on Instagram:
+> Our free program this season is « The Revenge of Madame Butterfly » 🦋 Rather than losing ourself in a one-sided relationship, we changed the ending of the classical story to fight for ourself and our happiness.
 
-Fun fact: this program's music is one of the main ones that inspired us to make our synchro music playlist! Truly one of the programs I've watched the most of and listened to the most (shoutout to Good News by Apashe)
+This was such an iconic program—I'm jealous of my friends who went to Lake Placid to watch this in-person. The dresses with the dark green and white sleeves are beautiful as well.
 
-the drum beat is such a good base i LOVE this music
+Fun fact: this program is one of the main reasons why we decided to make our synchro music playlist! It's truly one of the YouTube videos I've watched the most and synchro music that I've listened to the most (other than my own synchro programs' music, of course). Big shoutout to ["Good News"](https://open.spotify.com/track/3QdYdYTLk3fL3f9CJ4ZS59?si=2994cd65d4274b89) by Apashe—I can now recognize that drum beat anywhere, and it's the perfect foundation for a world-class program. 
 
-start of the half backward half forward pivot blocks
+I'm fairly certain this is the first time we ever saw half-forward and half-backward pivot blocks, as Les Suprêmes continued with their technical innovation that was successful after they won Worlds in the previous season.
 
+The big switch into pure classical music in the middle provides contrast, but you can tell that something is still building up with the opera singing.
 
-big switch into pure classical calm music but you can tell something is building up with the opera
+And just some crazy tricks that they casually did: three shoot-the-ducks in a row in the no hold element, front assisted somersaults in the artistic wheel, and insane stuff all around in the creative element all the way to their ending.
 
-crazy three shoot the ducks in a row in no hold
-
-front somersaults in the artistic wheel
-
-insane crazy stuff all around ending with the creative element to their ending
+This is one masterpiece of a program that I will be continuing to watch for a long, long time.
 
 3. ## "Mount Everest" | Les Suprêmes Senior (CAN) 2023-2024 Free Program
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EZvIP8uDY1I?si=SoD1kpZBS73jsuod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Iconic just because it was their three-peat world champions program
+From their [theme reveal](https://www.instagram.com/p/Cy8wEcxr_Q1/?hl=en) on Instagram:
+> Do you have what it takes? Join us on our treacherous journey as we ascend to the summit of Mount Everest 🏔️❄️
 
-The most iconic opening position trust fall, going straight into the creative element. I remember the first few comps when they didn't even get a creative element called because they weren't rotating the lifts, until they changed the choreography
+Again with the technical innovation of skirting around the rules and doing something super cool that no one else has thought of: the most iconic opening position with a huge trust fall, straight into the creative element. I remember at the first few competitions, they didn't even get their creative element called because the lifts were stationary and not rotating, until they changed the choreography to have them all rotate.
 
-intersecting shoot the ducks to y-scales with biellemanns to spiral duck unders
+This program had so many insane tricks as well: intersecting shoot-the-ducks to y-scales with Biellemanns to spiral duck-unders, last-minute change of people in the pivot block lines plus their signature half-forward and half-backward directions, shoot-the-ducks and falling leafs going through a whip intersection, the wind gusts in the music blowing the skaters into gradually turning in their lines, switching spots during clusteres, and the crazy turning lunges in the no hold element. They really put in difficult tricks just for funsies, which I feel like is now part of the signature Suprêmes style.
 
-peak difficulty omg
-
-the last minute change of pivot block lines to half backward half forward
-wind gust blowing with lines gradually turning
-
-SO MANY difficult elements just for funsies
-
-shoot the ducks and falling leafs through a whip?
-
-spot switch during cluster and drag turns (supremes style)
-
-
-The most perfect music choices - building up to rap to finish off such a strong program
-
-Ending with "I'm on top of the world" AS THEY THREE PEAT
+Their music choices show the buildup of climbing up a seemingly endless incline, switching seamlessly to energetic rap and finishing off an unbeatable program. Ending with the final lyric of "I'm on top of the world", *AS THEY THREE-PEATED WORLD CHAMPIONS* is just so iconic and I admire them so much for it.
 
 4. ## "He Had It Coming" | Team Unique Senior (FIN) 2024-2025 Free Program
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mvyywPtMaTA?si=vtdvhdMypbeFWtzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-SO SHARPPPPP like the blade of a knife. the precision is unmatched. every single person has the perfect expression the SASS
+From their [theme reveal](https://www.instagram.com/p/C_GDVyDIQim/?hl=en) on Instagram:
+> TU free program 24/25: "He Had It Coming" ❤️‍🔥
 
-that beginning. their necks moving in sync to the pops
+This program is inspired by the musical *Chicago*, and it is ***SO SHARP***. Their facial expressions, just standing in their beginning poses, and their first few micromovements have unmatched precision. The sass really cuts through like the blade of a newly-sharpened knife. Their dresses are genuinely fire too—that lace detailing is so beautiful.
 
-opening w perfect twizzles in a circle
+They open with perfect twizzles in a circle, complete their super unique group lifts (they have so many different positions in one group lift—I've never seen anything like it before), execute a perfect triangle-shaped pivot block, and finish a textbook whip (on one foot too).
 
-theri dresses are BEAUTIFULLL THAT LACE
+I also need an entire paragraph to gush about their death spirals. Back cartwheel, one-foot counter, straight into a cross-grab split death spiral (okay I am not good enough of a skater to know the real names of these pair elements) into like a flying rotational split exit. And they all do it perfectly in sync... how are they this flexible???!
 
-THE MOST INSANE DEATH SPIRALS. wdym back cartwheel, counter, straight into a cross grab split death spiral into a split exit. literally perfect in sync how are they so flexible
+Then they have a super upbeat no hold that is a perfect homage to *Chicago* (don't kill me please I've never actually watched *Chicago* so I could be completely wrong), with a final iconic creative element with the four split carry lifts that really remind me of a musical theatre performance.
 
-such unique group lifts, never seen anything like it before
+My only personal pet peeve that is completely unrelated to this program: can the crowd please learn how to clap on time?
 
-perfect pivot block in a triangle
+Anyway, they so so so deserved the win in the free program this year. I know I've been saying it about every program, but this is truly the most iconic one of them all, like it really embodies the very definition of iconic.
 
-perfect textbook whip on one foot too
+5. ## "Toivon, että ihmiset sun ympärillä kohtaa sut niin ku sä oot." | Helsinki Fintastic Junior (FIN) 2024-2025 Short Program
 
-personal pet peeve: can the crowd please learn how to clap on time
+<iframe width="560" height="315" src="https://www.youtube.com/embed/35Nmryqr6NA?si=q3gB74E7Mmwshzlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-super upbeat no hold! like genuinely the perfect homage to the musical
+From their [theme reveal](https://www.instagram.com/p/C60yE6dLEEA/) on Instagram:
+> Team Fintastic Short program 24-25 🩵☁️
 
-iconic creative element with the four split lifts that really just remind me of a musical tehatre performance
+Their theme is one of the lyrics from the Finnish song ["maasta taivaaseen"](https://open.spotify.com/track/0PWIrADNjGpiXA3EGjIbTW?si=8ed4df9edfdd4fb9) by pehmaino, and it translates roughly to "I hope that the people around you see you for who you are". This song is such a calming and wonderful listen.
 
-they so deserved the free program win
+It is a beautiful program all around, especially one skated by a Junior team. There's just such beautiful flow, symmetry, and choreography all throughout the program.
 
-5. ## "I hope that the people around you will see you for who you are." | Helsinki Fintastic Junior (FIN) 2024-2025 Short Program
+I especially love their transition which is kind of a moving diamond/wheel changing formation as the lines pivot—you don't even notice it, but suddenly they're all the way across the ice with all these beautiful connecting steps.
 
-
-1. ## "Dragon" | Helsinki Fintastic Junior (FIN) 2024-2025 Free Program
-
+Yes, I have used the adjective "beautiful" far too many times in this review, but I think this program deserves it. Every element flows into another seamlessly, with the most wonderful transitions and connecting steps, forming a beautiful, cohesive program.
 
 # Synchro Music
 My friend and I made a giant playlist (currently over 9 hours long), curating music from lots of synchro programs, both ones we've watched, ones we've skated, and ones we've competed against. Feel free to check it out!
