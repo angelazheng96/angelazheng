@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
+import Prose from "../components/Prose.astro";
 
 import profilePic from "../images/profile-picture.jpg";
 import profilePicDark from "../images/profile-picture-dark.jpg";
@@ -43,16 +44,7 @@ const homeContent = await import("../pages/home.md");
     </div>
   </Banner>
 
-  <div
-    class="mx-auto my-10 max-w-4xl px-4 md:px-6 lg:px-8 prose dark:prose-invert
-    prose-h1:text-xl md:prose-h1:text-2xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac
-    prose-h1:text-center md:prose-h1:text-left
-    prose-p:text-sm md:prose-p:text-base
-    prose-ul:text-sm prose-ol:text-sm prose-li:text-sm
-    md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base
-    marker:text-rose dark:marker:text-salmon
-    prose-a:text-inherit prose-a:no-underline prose-a:[&:hover]:text-eggplant dark:prose-a:[&:hover]:text-lilac"
-  >
+  <Prose class="mx-auto my-10 max-w-4xl px-4 md:px-6 lg:px-8">
     <Fragment set:html={homeContent.compiledContent()} />
-  </div>
+  </Prose>
 </Layout>

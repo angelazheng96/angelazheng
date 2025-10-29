@@ -1,12 +1,22 @@
 ---
-
+const { class: className } = Astro.props;
 ---
 
 <div
-    class="prose dark:prose-invert
-  prose-h1:font-bold prose-h1:text-xl
-  prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
-  prose-headings:underline"
+  class:list={[
+    "prose dark:prose-invert",
+    "prose-h1:text-xl md:prose-h1:text-2xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac",
+    "prose-h1:text-center md:prose-h1:text-left",
+    "prose-h1:mt-8 md:prose-h1:mt-10",
+    "prose-h2:text-base md:prose-h2:text-lg prose-h2:font-semibold prose-h2:text-teal dark:prose-h2:text-aquamarine",
+    "prose-h2:mt-4 md:prose-h2:mt-6 prose-h2:mb-4",
+    "prose-p:text-sm md:prose-p:text-base",
+    "prose-ul:text-sm prose-ol:text-sm prose-li:text-sm",
+    "md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base",
+    "marker:text-rose dark:marker:text-salmon",
+    "prose-a:text-inherit prose-a:no-underline prose-a:[&:hover]:text-eggplant dark:prose-a:[&:hover]:text-lilac",
+    className,
+  ]}
 >
-    <slot />
+  <slot />
 </div>
