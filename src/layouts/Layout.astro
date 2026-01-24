@@ -17,7 +17,11 @@ const { title } = Astro.props;
     <title>{title} | Angela Zheng</title>
   </head>
   <body
-    class="flex flex-col min-h-screen font-display text-dark bg-light dark:text-light dark:bg-dark"
+    class="flex flex-col min-h-screen font-display
+    text-dark bg-light
+    dark:text-light dark:bg-dark
+    selection:bg-eggplant/40 selection:text-light
+    dark:selection:bg-lilac/50"
   >
     <Navigation />
     <main class="flex-grow">
