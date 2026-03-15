@@ -1,9 +1,5 @@
 ---
-import { Image } from "astro:assets";
 import SocialLinks from "./SocialLinks.astro";
-
-import signatureDark from "../images/signature-dark.png";
-import signatureLight from "../images/signature-light.png";
 ---
 
 <footer
@@ -12,15 +8,15 @@ import signatureLight from "../images/signature-light.png";
   <div class="flex flex-col items-center gap-2">
     <SocialLinks />
     <div class="mt-4">
-      <Image
-        src={signatureDark}
+      <img
+        src="./images/signature-dark.png"
         alt="Handwritten text displaying 'Made with love by Angela Zheng'"
         width={200}
         loading="eager"
         class="block dark:hidden"
       />
-      <Image
-        src={signatureLight}
+      <img
+        src="./images/signature-light.png"
         alt="Handwritten text displaying 'Made with love by Angela Zheng'"
         width={200}
         loading="eager"
