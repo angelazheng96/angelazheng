@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+import Prose from "../components/Prose.astro";
+
+import ResearchCard from "../components/ResearchCard.astro";
+---
+
+<Layout title="Research">
+  <Banner>
+    <h1
+      class="text-4xl md:text-5xl font-medium text-center text-eggplant dark:text-lilac"
+    >
+      Research
+    </h1>
+  </Banner>
+
+  <div class:list={[
+    "mx-auto max-w-4xl px-4",
+    "prose dark:prose-invert",
+    "prose-h1:text-xl md:prose-h1:text-2xl prose-h1:font-semibold prose-h1:text-eggplant dark:prose-h1:text-lilac",
+    "prose-h1:text-center md:prose-h1:text-left",
+    "prose-h1:mt-8 md:prose-h1:mt-10",
+    "prose-h2:text-base md:prose-h2:text-xl prose-h2:font-semibold prose-h2:text-eggplant dark:prose-h2:text-lilac",
+    "prose-h2:mt-4 md:prose-h2:mt-6 prose-h2:mb-4",
+    "prose-p:text-sm md:prose-p:text-base prose-p:my-1",
+    "prose-ul:text-sm prose-ol:text-sm prose-li:text-sm",
+    "md:prose-ul:text-base md:prose-ol:text-base md:prose-li:text-base",
+    "marker:text-rose dark:marker:text-salmon",
+    "prose-a:text-inherit prose-a:font-normal prose-a:no-underline prose-a:[&:hover]:underline",
+    "prose-a:text-teal dark:prose-a:text-aquamarine"]}>
+    <ResearchCard
+      title="Modelling, Detection, and Classification: Applying Machine Learning to Gravitational Wave Astronomy"
+      authors="Angela Y. Zheng"
+      conference="CSSU Undergraduate Research Conference"
+      conferenceLink="https://www.cssu.ca/"
+      location="Toronto, Canada"
+      date="March 2026"
+      pdfLink="/publications/machinelearning-gw-astronomy.pdf"
+    />
+  </div>
+</Layout>

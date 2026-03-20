@@ -15,5 +15,9 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
+  redirects: {
+    "/publications": "/research"
+  },
+
   site: 'https://angelazheng.ca'
 });
