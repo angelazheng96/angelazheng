@@ -1,18 +1,18 @@
 ---
 layout: ../../layouts/BlogLayout.astro
-title: Cozy Video Games (100%)
+title: Cozy Video Games
 date: 2025-10-29T01:38:00.000-05:00
-description: My favourite cozy video games that I've 100% completed.
-tags: ["Video Games"]
+description: my favourite video games that I've 100% completed
+tags: ["video games"]
 ---
 
-# Overview
+# overview
 
 I'm one of those people who *has* to 100% video games in order for them to feel complete. My Steam library is even sorted into collections: "Completed", "In Progress", "Never Finishing" (I'm looking at you, Stardew Valley), and "Not Yet Started".
 
 I also get scared very, very easily, so I naturally play cozy games! I generally enjoy completing puzzle games with good storylines, cooking and building games, or ones that I can play with my friends.
 
-# My Favourites
+# my favourites
 
 ## [*Overcooked! 2*](https://store.steampowered.com/app/728880/Overcooked_2/) 🍔
 Went through *so much* insanity trying to complete this game, and kept getting scolded by my parents for spending too much time playing video games instead of taking a break for my eyes. Thanks to my friends for carrying me throughout. Maybe one day we'll finally finish four stars on every level...!
@@ -41,7 +41,7 @@ Also not super cozy—I would say it's a bit more on the spooky side. Really coo
 ## [*A Taste of the Past*](https://store.steampowered.com/app/1706930/A_Taste_of_the_Past/) 🥟
 A very short free game involving Chinese cooking dishes and a sad but beautiful storyline. I kind of forgot what exactly I liked so much about it, but I know that I really loved it.
 
-# Special Shoutouts
+# special shoutouts
 
 I haven't actually completed these games, but I love them too!
 
@@ -57,21 +57,24 @@ My perfectionist tendencies shine here: I'm always aiming for 100% on every orde
 ## [*Inbento*](https://store.steampowered.com/app/1567440/inbento/) 🍱
 Place the sushi pieces in the grid in the right order to finish with the correct bento box!
 
-## [*Is This Seat Taken?*](https://store.steampowered.com/app/3035120/Is_This_Seat_Taken/) 💺
-Still in progress, but a fun game having to place the (very picky) shapes into seats to fulfill all their requirements!
-
 ## [*Cosmic Express*](https://store.steampowered.com/app/583270/Cosmic_Express/) 🚂
 I'm not good enough at puzzles for this... but I still enjoy drawing paths for the trains to appropriately pick up and drop off all the alien customers. I have to say though, I'm not as big of a fan of the aesthetics (not cozy enough for me!).
 
 ## [*Untitled Goose Game*](https://store.steampowered.com/app/837470/Untitled_Goose_Game/) 🪿
 Cause chaos for humans, as a goose. Very good imitation of real-life Canadian geese.
 
-# For More Info 👀
+# for more info 👀
 
 If you'd like to snoop around and see what else I play, here's my Steam profile. :)
 
 As you can see, my 28 completed games out of 38 games total *probably* indicates some of my perfectionist tendencies...
 
-Thanks [@gamer2810](https://github.com/gamer2810) for creating [Steam miniprofile](https://github.com/gamer2810/steam-miniprofile) to embed my Steam profile!
-
-<iframe src="https://gamer2810.github.io/steam-miniprofile/?accountId=76561199511596824&interactive=true&vanityId=sdkjfskldjf" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
+<div class="flex justify-center">
+  <iframe src="https://gamer2810.github.io/steam-miniprofile/?accountId=76561199511596824&interactive=true&vanityId=sdkjfskldjf" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen></iframe>
+</div>
+<div class="text-sm text-center mt-4">
+  Credits:
+  <a href="https://github.com/gamer2810/steam-miniprofile" target="_blank">Steam miniprofile</a>
+  by 
+  <a href="https://github.com/gamer2810" target="_blank">@gamer2810</a>
+</div>

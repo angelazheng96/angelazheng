@@ -1,18 +1,19 @@
 ---
 import "../styles/global.css";
 
-const { title, authors, conference, conferenceLink, location, date, pdfLink } = Astro.props;
+const { title, authors, conference, conferenceLink, location, date, pdfLink } =
+  Astro.props;
 ---
 
 <div class="mb-6">
   <h2>{title}</h2>
   <p class="font-medium">{authors}</p>
   <p>
-    <a href={conferenceLink} target="_blank" rel="noopener noreferrer">{conference}</a> | {date} | {location}
+    <a href={conferenceLink} target="_blank" rel="noopener noreferrer"
+      >{conference}</a
+    > | {date} | {location}
   </p>
   <p>
-    <a href={pdfLink} target="_blank" rel="noopener noreferrer">
-      PDF
-    </a>
+    <a href={pdfLink} target="_blank" rel="noopener noreferrer"> PDF </a>
   </p>
 </div>

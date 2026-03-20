@@ -2,28 +2,30 @@
 layout: ../../layouts/BlogLayout.astro
 title: My Top 5 Synchro Programs
 date: 2025-10-29T01:12:00.000-05:00
-description: My favourite synchronized skating programs of all time.
-tags: ["Synchronized Skating", "Figure Skating"]
+description: my favourite synchronized skating programs of all time
+tags: ["synchronized skating", "figure skating"]
 ---
 
-# Overview
+# overview
 From the wonderful [OneTeamMVMT](https://www.oneteammvmt.org/pages/about-synchro):
 
 > Synchronized skating is a team discipline of figure skating, where 8-20 skaters train and compete together, performing intricate steps and elements together, in perfect sync or syncopation, as part of a routine set to music. It is a unique blend of artistry and athleticism, combining speed, strength, and agility with grace, flexibility, and theatrical performance.
 The main elements include: blocks, lines, intersections, circles, wheels, move elements, lifts, spins, and pair elements.
 
 
-# My Experience
+# my experience
 I started synchronized skating back in 2017 with [Starlight Synchro](https://www.starlightsynchro.com/), and continued every year until the 2024-2025 season! Going from the Pre-Juvenile category all the way to Intermediate (which got renamed to Gold) has taught me so much about skating better, navigating team dynamics, and being a leader.
 
 We worked really hard and (somehow) medalled three times at Nationals! Silver in 2023 (Calgary), Gold in 2024 (Waterloo), and Bronze in 2025 (also in Waterloo) + I was one of the Co-Captains! Throughout these years, I've always loved getting to watch the Senior and Junior teams at competitions and spending hours in front of the TV during Worlds. Synchro is such a competitive, beautiful sport that continues to evolve faster and faster, leaving any audience member in awe of the skaters.
 
-# Time for the Rankings!
+# time for the rankings!
 
 Disclaimer: These are just my personal favourite programs! There are so many awesome synchro teams out there—it's very difficult to pick the best ones. This is basically just me fangirling over these insane teams.
 
 1. ## "Breathe" | Helsinki Rockettes Senior (FIN) 2022-2023 Short Program
+<div class="flex justify-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/S-MFWkNdzVY?si=NV5MrrXwDklh_XBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 From their [theme reveal](https://www.instagram.com/p/CikezCpgUoU/?hl=en) on Instagram:
 > Inhale, Exhale… Take a deep breath. Breath in, breath out. As heart beat accelerates, breathing gets heavy and loud. 🫀 Panic, stress, shortness of breath feels like pain in your body. Breath in, breath out, everything will be allright! The breath was not the last one. ⛅️ Just keep breathing… 🌬
@@ -41,7 +43,9 @@ I am SUCH A HUGE FAN of that artistic wheel—it perfectly concludes the program
 I love this program so much—it'll truly take a lot to top it in my rankings.
 
 2. ## "The Revenge of Madame Butterfly" | Les Suprêmes Senior (CAN) 2022-2023 Free Program
+<div class="flex justify-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RSa8VWy4J1M?si=IkPx4qnEPDj12drd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 From their [theme reveal](https://www.instagram.com/p/Cl1bTdPjV_t/?hl=en) on Instagram:
 > Our free program this season is « The Revenge of Madame Butterfly » 🦋 Rather than losing ourself in a one-sided relationship, we changed the ending of the classical story to fight for ourself and our happiness.
@@ -60,7 +64,9 @@ This is one masterpiece of a program that I will be continuing to watch for a lo
 
 3. ## "Mount Everest" | Les Suprêmes Senior (CAN) 2023-2024 Free Program
 
+<div class="flex justify-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EZvIP8uDY1I?si=SoD1kpZBS73jsuod" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 From their [theme reveal](https://www.instagram.com/p/Cy8wEcxr_Q1/?hl=en) on Instagram:
 > Do you have what it takes? Join us on our treacherous journey as we ascend to the summit of Mount Everest 🏔️❄️
@@ -73,7 +79,9 @@ Their music choices show the buildup of climbing up a seemingly endless incline,
 
 4. ## "He Had It Coming" | Team Unique Senior (FIN) 2024-2025 Free Program
 
+<div class="flex justify-center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mvyywPtMaTA?si=vtdvhdMypbeFWtzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 From their [theme reveal](https://www.instagram.com/p/C_GDVyDIQim/?hl=en) on Instagram:
 > TU free program 24/25: "He Had It Coming" ❤️‍🔥
@@ -92,7 +100,9 @@ Anyway, they so so so deserved the win in the free program this year. I know I'v
 
 5. ## "Toivon, että ihmiset sun ympärillä kohtaa sut niin ku sä oot." | Helsinki Fintastic Junior (FIN) 2024-2025 Short Program
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/35Nmryqr6NA?si=q3gB74E7Mmwshzlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="flex justify-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/35Nmryqr6NA?si=q3gB74E7Mmwshzlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 From their [theme reveal](https://www.instagram.com/p/C60yE6dLEEA/) on Instagram:
 > Team Fintastic Short program 24-25 🩵☁️
@@ -105,7 +115,9 @@ I especially love their transition which is kind of a moving diamond/wheel chang
 
 Yes, I have used the adjective "beautiful" far too many times in this review, but I think this program deserves it. Every element flows into another seamlessly, with the most wonderful transitions and connecting steps, forming a beautiful, cohesive program.
 
-# Synchro Music
+# synchro music
 My friend and I made a giant playlist (currently over 9 hours long), curating music from lots of synchro programs, both ones we've watched, ones we've skated, and ones we've competed against. Feel free to check it out!
 
+<div class="flex justify-center my-6">
 <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4Qeko0OWg4QIsjNyVylOIL?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>

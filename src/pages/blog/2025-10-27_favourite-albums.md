@@ -2,8 +2,8 @@
 layout: ../../layouts/BlogLayout.astro
 title: A Glimpse Into My Music Taste
 date: 2025-10-29T00:05:00.000-05:00
-description: Some of my favourite albums that I've been listening to.
-tags: ["Music"]
+description: some albums that I've been listening to
+tags: ["music"]
 ---
 
 A journey through my favourite albums over the years, in chronological order of my listening. I apologize in advance for my bad song puns.
