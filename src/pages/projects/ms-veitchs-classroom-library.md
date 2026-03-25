@@ -5,7 +5,7 @@ date: 2024-06-10T00:00:00.000-05:00
 description: A library database website for students to browse Ms. Veitch's books.
 tags: ["School"]
 techStack: ["Google Apps Script", "HTML", "CSS"]
-repo: https://github.com/angelazheng96/ms-veitchs-classroom-library
+repo: https://github.com/angelayzheng/ms-veitchs-classroom-library
 demo:
 ---
 

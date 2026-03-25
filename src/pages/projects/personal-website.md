@@ -5,7 +5,7 @@ date: 2025-10-27T00:00:00.000-05:00
 description: What you're looking at right now! :D
 tags: ["Website", "Athena Award"]
 techStack: ["Astro", "JavaScript", "Tailwind CSS"]
-repo: https://github.com/angelazheng96/angelazheng
+repo: https://github.com/angelayzheng/angelazheng
 demo: https://angelazheng.ca
 ---
 
@@ -13,7 +13,7 @@ demo: https://angelazheng.ca
 
 I've been meaning to build a personal website for a very long time, but never really got around to doing it until earlier this summer.
 
-Thanks to [Hack Club](https://hackclub.com/)'s [Athena Award](https://athena.hackclub.com/) for providing incentives to finish and deploy my website on a deadline! My code is [open source](https://github.com/angelazheng96/angelazheng).
+Thanks to [Hack Club](https://hackclub.com/)'s [Athena Award](https://athena.hackclub.com/) for providing incentives to finish and deploy my website on a deadline! My code is [open source](https://github.com/angelayzheng/angelazheng).
 
 # Development
 

@@ -5,7 +5,7 @@ date: 2025-10-30T00:00:00.000-05:00
 description: A simple and pretty stopwatch/timer website.
 tags: ["Clock", "Website", "Athena Award"]
 techStack: ["Astro", "JavaScript", "Tailwind CSS"]
-repo: https://github.com/angelazheng96/tick-tock
+repo: https://github.com/angelayzheng/tick-tock
 demo: https://tick-tock.angelazheng.ca
 ---
 

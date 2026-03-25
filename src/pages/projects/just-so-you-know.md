@@ -5,8 +5,8 @@ date: 2025-03-16T00:00:00.000-05:00
 description: A simple Android app that sends you a notification whenever you receive a new notification.
 tags: ["Hackathon", "Hack Club", "Scrapyard Ottawa"]
 techStack: ["Android Studio", "Kotlin"]
-repo: https://github.com/angelazheng96/just-so-you-know
-demo: https://github.com/angelazheng96/just-so-you-know/releases/tag/v1.0.0
+repo: https://github.com/angelayzheng/just-so-you-know
+demo: https://github.com/angelayzheng/just-so-you-know/releases/tag/v1.0.0
 ---
 
 # Overview
@@ -38,4 +38,4 @@ Thank you to Kale Wu and Andrew Zhang for being awesome teammates!
 
 # Deployment
 
-We built Just So You Know with Android Studio and Kotlin. It's not officially released anywhere, but you can download it for yourself [here](https://github.com/angelazheng96/just-so-you-know/releases/tag/v1.0.0)!
+We built Just So You Know with Android Studio and Kotlin. It's not officially released anywhere, but you can download it for yourself [here](https://github.com/angelayzheng/just-so-you-know/releases/tag/v1.0.0)!
