@@ -1,8 +1,30 @@
 ---
 import "../styles/global.css";
 
-const { title, authors, conference, conferenceLink, location, date, pdfLink } =
+const { title, authors, conference, conferenceLink, location, date, links } =
   Astro.props;
+
+const linkEntries = (() => {
+  if (!links) {
+    return [];
+  }
+
+  if (links instanceof Map) {
+    return Array.from(links.entries());
+  }
+
+  if (Array.isArray(links)) {
+    return links
+      .filter((entry) => Array.isArray(entry) && entry.length >= 2)
+      .map(([text, url]) => [String(text), String(url)]);
+  }
+
+  if (typeof links === "object") {
+    return Object.entries(links).map(([text, url]) => [text, String(url)]);
+  }
+
+  return [];
+})();
 ---
 
 <div class="mb-6">
@@ -13,7 +35,17 @@ const { title, authors, conference, conferenceLink, location, date, pdfLink } =
       >{conference}</a
     > | {date} | {location}
   </p>
-  <p>
-    <a href={pdfLink} target="_blank" rel="noopener noreferrer"> PDF </a>
-  </p>
+  {
+    linkEntries.length > 0 && (
+      <p>
+        {linkEntries.map(([text, url], index) => (
+          <span>
+            {index > 0 && " | "}
+            {/* prettier-ignore */}
+            <a href={url} target="_blank" rel="noopener noreferrer">{text}</a>
+          </span>
+        ))}
+      </p>
+    )
+  }
 </div>
